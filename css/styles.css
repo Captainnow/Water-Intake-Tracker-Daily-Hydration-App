@@ -428,6 +428,7 @@ body {
   outline: none;
   transition: all 0.3s ease;
   -webkit-appearance: none;
+  appearance: none;
   backdrop-filter: blur(10px);
 }
 .glass-input:focus {
@@ -449,6 +450,7 @@ body {
   outline: none;
   transition: all 0.3s ease;
   -webkit-appearance: none;
+  appearance: none;
   backdrop-filter: blur(10px);
 }
 .glass-input-sm:focus {
@@ -473,7 +475,8 @@ body {
   appearance: none;
 }
 .glass-select option {
-  background: #0b1626;
+  background: var(--bg2);
+  color: var(--text);
 }
 
 /* ── CHIPS ── */
@@ -806,6 +809,7 @@ body {
   position: relative;
   overflow: hidden;
   -webkit-appearance: none;
+  appearance: none;
   backdrop-filter: blur(10px);
 }
 .cup-btn::before {
