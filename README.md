@@ -2,7 +2,6 @@
 
 💧 **Droplet** is a highly interactive, futuristic, and beautiful web application designed to help you track your daily hydration goals with style. Built with pure HTML, CSS, and JavaScript, the app operates natively in the browser without any heavy frameworks.
 
-🔗 **Repository:** [Water-Intake-Tracker-Daily-Hydration-App](https://github.com/Captainnow/Water-Intake-Tracker-Daily-Hydration-App)
 
 ## ✨ Features
 
