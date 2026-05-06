@@ -3,7 +3,9 @@
 💧 **Droplet** is a highly interactive, futuristic, and beautiful web application designed to help you track your daily hydration goals with style. Built with pure HTML, CSS, and JavaScript, the app operates natively in the browser without any heavy frameworks.
 
 <img width="427" height="844" alt="image" src="https://github.com/user-attachments/assets/971643e2-f5ab-46ae-bb49-5ebaf584c6e2" />
+
 <img width="425" height="927" alt="image" src="https://github.com/user-attachments/assets/a382af5d-09c1-48f4-ae90-ad1836a155ac" />
+
 <img width="422" height="927" alt="image" src="https://github.com/user-attachments/assets/a10b7c71-4d00-4a5c-a329-468024a1894e" />
 
 
