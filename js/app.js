@@ -192,6 +192,7 @@ function finishOnboarding() {
   state.onboardStep = 0;
   saveState();
   switchScreen('main-app');
+  switchTab('home');
   initMainApp();
 }
 
@@ -697,6 +698,49 @@ function resetData() {
   updateLogList();
   updateStreak();
   showToast('Data reset. Fresh start! 💧');
+}
+
+function logOut() {
+  if (!confirm('Are you sure you want to log out? This will erase all your profile data and return you to the start.')) return;
+  
+  localStorage.removeItem('droplet_state');
+  
+  // Reset state in memory (preserving theme)
+  const currentTheme = state.theme;
+  state = {
+    onboarded: false,
+    name: 'Friend',
+    dailyGoal: 2500,
+    logs: {},
+    streak: 0,
+    lastGoalDate: null,
+    cupSizes: [150, 250, 350, 500],
+    cupIcons: ['☕', '🥤', '🍵', '🫙'],
+    reminderEnabled: false,
+    reminderFreq: 2,
+    reminderStart: '08:00',
+    reminderEnd: '22:00',
+    climate: 'mild',
+    activity: 'low',
+    weight: 70,
+    weightUnit: 'kg',
+    onboardStep: 0,
+    theme: currentTheme
+  };
+  
+  // Reset UI elements
+  document.querySelectorAll('.onboard-page').forEach(p => p.classList.remove('active', 'exit'));
+  document.getElementById('ob-page0').classList.add('active');
+  document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === 0));
+  
+  document.getElementById('input-name').value = '';
+  document.getElementById('input-weight').value = '';
+  document.getElementById('input-custom-goal').value = '';
+  
+  switchTab('home');
+  
+  // Switch to Splash
+  switchScreen('splash-screen');
 }
 
 // ── NOTIFICATIONS ──────────────────────
