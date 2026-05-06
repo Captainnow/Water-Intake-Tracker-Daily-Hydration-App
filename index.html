@@ -10,8 +10,8 @@
   <link rel="manifest" href="manifest.json" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=5" />
 </head>
 <body>
   <div id="app">
@@ -172,10 +172,10 @@
             <div class="ring-glow"></div>
             <svg class="progress-ring" viewBox="0 0 220 220" id="progress-ring-svg">
               <defs>
-                <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#00f0ff"/>
-                  <stop offset="100%" stop-color="#b026ff"/>
-                </linearGradient>
+              <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0ea5a4"/>
+                <stop offset="100%" stop-color="#5eead4"/>
+              </linearGradient>
                 <filter id="glow">
                   <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
                   <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -190,13 +190,13 @@
                 <circle cx="110" cy="110" r="86"/>
               </clipPath>
               <g clip-path="url(#ringClip)">
-                <rect id="water-fill" x="24" y="110" width="172" height="172" fill="url(#waterGrad)" opacity="0.25"/>
-                <path id="wave-path1" fill="rgba(0,240,255,0.15)" d="M24,130 Q55,115 86,130 Q117,145 148,130 Q179,115 196,130 L196,196 L24,196 Z"/>
-                <path id="wave-path2" fill="rgba(176,38,255,0.15)" d="M24,135 Q60,120 90,135 Q120,150 155,135 Q175,125 196,135 L196,196 L24,196 Z"/>
+              <rect id="water-fill" x="24" y="110" width="172" height="172" fill="url(#waterGrad)" opacity="0.2"/>
+                <path id="wave-path1" fill="rgba(14,165,164,0.18)" d="M24,130 Q55,115 86,130 Q117,145 148,130 Q179,115 196,130 L196,196 L24,196 Z"/>
+                <path id="wave-path2" fill="rgba(94,234,212,0.12)" d="M24,135 Q60,120 90,135 Q120,150 155,135 Q175,125 196,135 L196,196 L24,196 Z"/>
                 <defs>
                   <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.6"/>
-                    <stop offset="100%" stop-color="#b026ff" stop-opacity="0.8"/>
+                    <stop offset="0%" stop-color="#0ea5a4" stop-opacity="0.5"/>
+                    <stop offset="100%" stop-color="#5eead4" stop-opacity="0.7"/>
                   </linearGradient>
                 </defs>
               </g>
